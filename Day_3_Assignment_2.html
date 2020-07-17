@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> 
+        Extract OS Name and Version
+    </title> 
+</head> 
+  
+<body > 
+              
+        <h1>OS Name and Versions</h1> 
+                    
+        <p id="GFG">  
+            Click the button to enter OS Details 
+        </p> 
+          
+        <input type="button" value="click " onclick="myGeeks()"> 
+          
+    <script> 
+        function myGeeks() { 
+            var str = prompt("Enter OS name and version",""); 
+            var name = str.match(/(\D+)/); 
+            var version = str.match(/(\d+)/);
+              console.log("OS Name is"+ "" + name);
+              console.log("Version is"+ "" + version );
+            /* if (matches) { 
+                document.getElementById('GFG').innerHTML 
+                        = matches[0]; 
+            }  */
+        } 
+    </script> 
+</body> 
+</html>                 
