@@ -1,0 +1,50 @@
+<!-- Question 5:
+You are managing a sales department for your company, you want to reward your employees based on
+the sales made by them during the year.
+The criteria is as follows:
+1. Sales from 0-5000 : 2%
+2. Sales from 5001 - 10000 : 5%
+3. Sales from 10001 - 20000 : 7%
+4. Above 20000 - 10%
+Then log the total commission earned by him. -->
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ASSIGNMENT 5 DAY 4</title>
+
+
+</head>
+
+<body>
+  <h2>ASSIGNMENT 5 DAY 4</h2>
+  <script>
+    let sales = prompt("Enter the sales value");
+    if (sales <= 5000) {
+      let result = (sales * 0.02)
+      let s = result.toFixed(2);
+      console.log(`Commision :${s}`);
+    }
+    else if (sales > 5000 && sales <= 10000) {
+      let result = (((sales - 5000) * 0.05) + 100)
+      let s = result.toFixed(2);
+      console.log(`Comission: ${s}`);
+    }
+    else if (sales > 10000 && sales <= 20000) {
+      let result = (((sales - 10000) * 0.07) + 350)
+      let s = result.toFixed(2);
+      console.log(`Comission: ${s}`);
+    }
+    else if (sales > 20000) {
+      let result = (((sales - 20000) * 0.10) + 1050)
+      let s = result.toFixed(2);
+      console.log(`Comission: ${s}`);
+    }
+
+  </script>
+</body>
+
+</html>
